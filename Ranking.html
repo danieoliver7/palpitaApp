@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<title>Palpitapp - Ranking</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Font Google-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,400;1,600;1,800&family=Roboto:wght@100;300;400;900&display=swap"
+		rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!-- Css Icones Bootstrap -->
+	<script src="https://kit.fontawesome.com/ed352fdede.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-fundo-app-1">
+	<div class="session">
+		<nav class="navbar navbar-light w-100 fixed-top bg-fundo-nav">
+			<div class="container-fluid">
+				<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+					aria-controls="offcanvasExample">
+					<i class="bi bi-list text-branco"></i>
+				</button>
+				<span class="fs-20 text-bol text-branco">Ranking dos Palpiteiros</span>
+				<a href="./Notificacoes.html">
+					<button class="btn" type="button">
+						<i class="bi bi-bell-fill text-branco"></i>
+					</button>
+				</a>
+			</div>
+		</nav>
+		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+			aria-labelledby="offcanvasExampleLabel" style="max-width: 300px;">
+			<div class="offcanvas-header bg-fundo-nav">
+				<span class="px-3">
+					<img class="" src="./img/Logos/logo-Palpitapp-2022-branco.png" alt=""
+						style="width: 50%; max-width: 500px;">
+				</span>
+				<button type="button" class="btn text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+					<i class="bi bi-x-circle text-branco fs-20"></i>
+				</button>
+			</div>
+			<div class="offcanvas-body bg-gray-100">
+				<hr class="mt-n2">
+				<a href="/Home.html">
+					<div class="row align-items-center">
+						<div class="col-1">
+							<img class="icons-menu" src="./img/icons-menu/ico-menu-home.png" alt="">
+						</div>
+						<div class="col-9 mt-1 ms-1">
+							<span class="text-preto">Início</span>
+						</div>
+						<div class="col-1">
+							<i class="bi bi-caret-right text-preto"></i>
+						</div>
+					</div>
+				</a>
+				<hr>
+				<a href="/Jogos.html">
+					<div class="row align-items-center">
+						<div class="col-1">
+							<img class="icons-menu" src="./img/icons-menu/ico-menu-jogos.png" alt="">
+						</div>
+						<div class="col-9 mt-1 ms-1">
+							<span class="text-preto">Jogos</span>
+						</div>
+						<div class="col-1">
+							<i class="bi bi-caret-right text-preto"></i>
+						</div>
+					</div>
+				</a>
+				<hr>
+				<a href="/Palpites.html">
+					<div class="row align-items-center">
+						<div class="col-1">
+							<img class="icons-menu" src="./img/icons-menu/ico-menu-Palp.png" alt="">
+						</div>
+						<div class="col-9 mt-1 ms-1">
+							<span class="text-preto">Palpites</span>
+						</div>
+						<div class="col-1">
+							<i class="bi bi-caret-right text-preto"></i>
+						</div>
+					</div>
+				</a>
+				<hr>
+				<a href="/Classificacao.html">
+					<div class="row align-items-center">
+						<div class="col-1">
+							<img class="icons-menu" src="./img/icons-menu/ico-menu-class.png" alt="">
+						</div>
+						<div class="col-9 mt-1 ms-1">
+							<span class="text-preto">Classificação</span>
+						</div>
+						<div class="col-1">
+							<i class="bi bi-caret-right text-preto"></i>
+						</div>
+					</div>
+				</a>
+				<hr>
+				<a href="/Ranking.html">
+					<div class="row align-items-center">
+						<div class="col-1">
+							<img class="icons-menu" src="./img/icons-menu/ico-menu-rk.png" alt="">
+						</div>
+						<div class="col-9 mt-1 ms-1">
+							<span class="text-preto">Ranking</span>
+						</div>
+						<div class="col-1">
+							<i class="bi bi-caret-right text-preto"></i>
+						</div>
+					</div>
+				</a>
+				<hr>
+				<a href="/Notificacoes.html">
+					<div class="row align-items-center">
+						<div class="col-1">
+							<i class="bi bi-bell fs-20 text-cinza"></i>
+						</div>
+						<div class="col-9 mt-1 ms-1">
+							<span class="text-preto">Notificações</span>
+						</div>
+						<div class="col-1">
+							<i class="bi bi-caret-right text-preto"></i>
+						</div>
+					</div>
+				</a>
+				<hr>
+				<a href="/Editar-Perfil.html">
+					<div class="row align-items-center">
+						<div class="col-1">
+							<i class="bi bi-person fs-20 text-cinza"></i>
+						</div>
+						<div class="col-9 mt-1 ms-1">
+							<span class="text-preto">Editar Perfil</span>
+						</div>
+						<div class="col-1">
+							<i class="bi bi-caret-right text-preto"></i>
+						</div>
+					</div>
+				</a>
+				<hr>
+				<a href="./pontuacao.html">
+					<div class="row align-items-center">
+						<div class="col-1">
+							<i class="bi bi-file-text fs-20 text-cinza"></i>
+						</div>
+						<div class="col-9 mt-1 ms-1">
+							<span class="text-preto">Regulamento e Pontuação</span>
+						</div>
+						<div class="col-1">
+							<i class="bi bi-caret-right text-preto"></i>
+						</div>
+					</div>
+				</a>
+				<hr>
+				<div class="row align-items-center profile-content">
+					<div class="col-12 text-center">
+						<a href="/Editar-Perfil.html">
+							<button class="btn w-100">
+								<i class="bi bi-gear ms-1"></i>
+								Configurações
+							</button>
+						</a>
+					</div>
+					<div class="col-12 text-center">
+						<a href="/index.html">
+							<button class="btn btn-dark w-100">
+								<i class="bi bi-box-arrow-left ms-1"></i>
+								Sair
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Rodapé -->
+		<div class="container-fluid text-center fixed-bottom shadow-inf" id="rodape-menu">
+			<div class="row bg-branco">
+				<nav class="mb-n1 mt-2" id="menu">
+					<ul>
+						<li>
+							<a href="/Home.html">
+								<div class="px-2">
+									<img class="icons-menu" src="./img/icons-menu/ico-menu-home.png" alt="">
+									<p class="fs-9 mt-0 text-cinza">Início</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="/Jogos.html">
+								<div class="px-2">
+									<img class="icons-menu" src="./img/icons-menu/ico-menu-jogos.png" alt="">
+									<p class="fs-9 mt-0 text-cinza">Jogos</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="/Palpites.html">
+								<div class="px-2">
+									<img class="icons-menu" src="./img/icons-menu/ico-menu-Palp.png" alt="">
+									<p class="fs-9 mt-0 text-cinza">Palpites</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="/Classificacao.html">
+								<div class="px-2">
+									<img class="icons-menu" src="./img/icons-menu/ico-menu-class.png" alt="">
+									<p class="fs-9 mt-0 text-cinza">Classif.</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="/Ranking.html">
+								<div class="px-2">
+									<img class="icons-menu" src="./img/icons-menu/ico-menu-rk-roxo.png" alt="">
+									<p class="fs-9 mt-0 text-roxo">Ranking</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- Rodapé -->
+	</div>
+	<main class="">
+		<!-- Conteúdo -->
+		<div class="container-fluid" style="max-width: 400px;">
+			<div class="row mt-inicio mb-0">
+				<div class="col-12 text-center mt-n0 mb-3 ">
+					<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+						<div class="row">
+							<div class="col-12">
+								<div class="carousel-inner">
+									<div class="carousel-item py-5-1 active text-center" data-bs-interval="10000">
+										<a href="">
+											<img class="borda-btn" src="./img/Top-Banners/TOP-BANNERS-01.png" alt=""
+												style="width: 100%;">
+										</a>
+									</div>
+									<div class="carousel-item py-5-1 text-center" data-bs-interval="2000">
+										<a href="">
+											<img class="borda-btn" src="./img/Top-Banners/TOP-BANNERS-02.png" alt=""
+												style="width: 100%;">
+										</a>
+									</div>
+									<div class="carousel-item py-5-1 text-center">
+										<a href="">
+											<img class="borda-btn" src="./img/Top-Banners/TOP-BANNERS-03.png" alt=""
+												style="width: 100%;">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="carousel-indicators mx-5">
+									<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+										class="active" aria-current="true" aria-label="Slide 1"></button>
+									<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+										aria-label="Slide 2"></button>
+									<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+										aria-label="Slide 3"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 mb-4 mt-n4">
+					<div class="card borda-1 bg-liga-0 borda-n shadow-card py-3 px-3 mt-3">
+						<div class="row">
+							<div class="col-12 text-branco text-bold fs-18">
+								<i class="bi bi-trophy ms-2"></i>
+								<span>Criar Liga para jogar entre amigos</span>
+							</div>
+							<div class="col-12 text-branco text-bold fs-18 mt-2">
+								<button type="button" class="btn btn-light borda-btn btn-sm w-100" data-bs-toggle="modal"
+									data-bs-target="#staticBackdrop">
+									<span class="text-bold fs-14"> Criar Liga</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 text-center mt-3 mb-1 text-cinza fs-14 text-bold">
+					<i class="bi bi-trophy"></i>
+					<span>Suas Ligas de Palpites</span>
+				</div>
+				<div class="col-12">
+					<a href="./Ranking-Copa.html">
+						<div class="card borda-1 bg-liga-01 borda-n shadow-card py-3 px-3 mt-3">
+							<div class="row">
+								<div class="col-12 text-branco text-bold fs-18">
+									<i class="bi bi-trophy ms-2"></i>
+									<span>COPA DO MUNDO - 2022</span>
+								</div>
+								<div class="col-12 ms-2 text-branco text-bold fs-12">
+									<span>Liga Geral - By Palpitapp</span>
+								</div>
+								<div class="col-12 mt-2">
+									<button class="btn btn-light btn-sm borda-btn">
+										<span class="fs-14 text-bold p-2">Ver Ranking</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="row p-3 mt-4 mb-8">
+				<div class="col text-center borda-compartilhe px-1 py-1"> 
+					<span class="text-bold text-roxo">Compartilhe e ganhe pontos</span>
+					<a href=""><i class="bi bi-facebook text-azul fs-20 ms-1 me-1"></i></a>
+					<a href=""><i class="bi bi-whatsapp text-verde fs-20 ms-1 me-1"></i></a>
+					<a href=""><i class="bi bi-twitter text-azul fs-20 ms-1 me-1"></i></a>
+
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- Modal -->
+	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+		aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
+			<div class="modal-content bg-fundo shadow-card">
+				<div class="row py-5 px-5">
+					<div class="col-12 text-center mb-8">
+						<img src="./img/Logos/logo-Palpitapp-2022-branco.png" alt="" style="max-width: 80%;">
+					</div>
+					<div class="col-12 text-center text-branco text-bold mb-5">
+						<span>
+							Essa Opção ainda não está liberada, Em breve você poderá criar suas próprias
+							ligas para dispotar com mais palpiteiros por ai! 
+						</span>
+					</div>
+					<div class="col-12 py-4 px-4 text-center fixed-bottom">
+						<button type="button" class="btn btn-roxo w-100" data-bs-dismiss="modal">Fechar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- JavaScript -->
+	<script src="./js/jquery-3.3.1.slim.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,4338 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<title>Palpitapp - Copa 2022</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Font Google-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,400;1,600;1,800&family=Roboto:wght@100;300;400;900&display=swap"
+		rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!-- Css Icones Bootstrap -->
+	<script src="https://kit.fontawesome.com/ed352fdede.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-fundo-app-1">
+	<section>
+		<nav class="navbar navbar-light w-100 fixed-top bg-fundo-nav">
+			<div class="container-fluid ">
+				<div class="return_back text-branco" onclick="window.history.go(-1);">
+					<i class="bi bi-arrow-left text-branco fs-20"></i>
+				</div>
+				<span class="fs-20 text-bol text-branco text-center">Palpites
+					<p class="fs-10 text-bol text-branco text-center">Copa do Mundo - 2022</p>
+				</span>
+				<button class="btn text-center" type="button" data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+					<i class="bi bi-bell-fill text-preto"></i>
+				</button>
+			</div>
+		</nav>
+		<div class="wrapper-scroll fixed-top bg-branco py-jogos-rodadas px-2 shadow-card mt-jogos-copa">
+			<div class="item mt-2">
+				<button class="btn btn-sm btn-jogos" type="button" data-bs-toggle="collapse"
+					data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					<i class="bi bi-trophy-fill"></i>
+					1° Rodada
+				</button>
+			</div>
+			<div class="item mt-2">
+				<button class="btn btn-sm btn-jogos" type="button" data-bs-toggle="collapse"
+					data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					<i class="bi bi-trophy-fill"></i>
+					Oitavas
+				</button>
+			</div>
+			<div class="item mt-2">
+				<button class="btn btn-sm btn-jogos" type="button" data-bs-toggle="collapse"
+					data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+					<i class="bi bi-trophy-fill"></i>
+					Quartas
+				</button>
+			</div>
+			<div class="item mt-2">
+				<button class="btn btn-sm btn-jogos" type="button" data-bs-toggle="collapse"
+					data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+					<i class="bi bi-trophy-fill"></i>
+					Semifinal
+				</button>
+			</div>
+			<div class="item mt-2">
+				<button class="btn btn-sm btn-jogos" type="button" data-bs-toggle="collapse"
+					data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+					<i class="bi bi-trophy-fill"></i>
+					Finais
+				</button>
+			</div>
+		</div>
+		<!-- Rodapé -->
+		<div class="container-fluid bg-gray-150 text-center fixed-bottom px-2 py-2 shadow-inf" id="rodape-menu">
+			<div class="row">
+				<div class="col-12 text-center px-4 py-2">
+					<button class="btn btn-roxo borda-btn fs-16 text-branco text-bold w-100" type="button" data-bs-toggle="modal"
+					data-bs-target="#staticBackdrop">
+						Salvar Resultados
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- Rodapé -->
+	</section>
+	<main class="mt-jogos-2">
+		<div class="container-fluid justify-content-center" style="max-width: 500px;">
+			<div class="accordion mt-4" id="accordionExample">
+				<div class="accordion-item borda-n">
+					<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body p-0 mb-8">
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">21/11 (Segunda Feira)</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Grupo A</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Thumama</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">07h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Senegal.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Senegal</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Holanda.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Holanda</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Grupo B</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Khalifa</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">10h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Inglaterra.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Inglaterra</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-ira.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Irã</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Grupo A</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Bayt Stadium</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">13h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Catar.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Catar</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Equador.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Equador</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Grupo B</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Rayyan</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">07h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Eua.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">EUA</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Ucrania.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Ucrânia</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">22/11 (Terça-Feira)</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Grupo C</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Lusail</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">07h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-argentina.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Argentina</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-AfricaDoSul.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Arábia Saudita</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Grupo D</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Education City</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">10h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Dinamarca.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Dinamarca</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Tunisia.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Tunísia</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Grupo C</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">974 (Porto de Doha)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">13h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-mexico.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">México</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Polonia.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Polônia</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Grupo D</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Janoub (Al Wakrah)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">07h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Franca.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">França</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Peru.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Peru</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">23/11 (Quarta-Feira)</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Grupo F</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Bayt</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">07h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Marrocos.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Marrocos</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Croacia.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Croácia</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Grupo E</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Khalifa</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">10h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Alemanha.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Alemanha</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Japao.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Japão</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Grupo C</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Thumama</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">13h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Espanha.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Espanha </p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-CostaRica.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Costa Rica</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo F</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Ahmad Bin Ali (Al Rayyan)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Belgica.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Bélgica</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Canada.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Canadá</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">24/11 (Quinta-Feira</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo G</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Janoub (Al Wakrah)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">07h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Suica.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Suíça</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Camaroes.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Camarões</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo H</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Education City</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">10h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Uruguai.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Uruguai</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Coreia.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Coreia do Sul</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo H</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">974 (Porto de Doha)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">13h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Portugal.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Portugal </p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Gana.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Gana</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo G</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Ahmad Bin Ali (Al Rayyan)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Brasil.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Brasil</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Servia.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Sérvia</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">25/11 (Sexta-Feira)</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo B</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza"> Ahmad Bin Ali (Al Rayyan)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">07h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Ucrania.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Ucrânia</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-ira.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Irã</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo A</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Thumama</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">10h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Catar.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Catar</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Senegal.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Senegal</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo A</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Khalifa</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">13h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Portugal.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Holanda </p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Equador.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Equador</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo B</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Bayt</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Inglaterra.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Inglaterra</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Eua.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">EUA</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">26/11 (Sábado)</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo D</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Janoub (Al Wakrah)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">07h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Tunisia.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Tunísia</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Peru.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Peru</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo C</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Education City</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">10h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Polonia.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Polônia</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-AfricaDoSul.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Arábia Saudita</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo D</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">974 (Porto de Doha)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">13h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Franca.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">França </p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Portugal.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Portugal</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo C</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Lusail</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-argentina.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Argentina</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-mexico.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">México</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">27/11 (Domingo)</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo E</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Ahmad Bin Ali (Al Rayyan)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">07h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Japao.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Japão</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-CostaRica.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Costa Rica</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo F</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Thumama</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">10h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Belgica.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Bélgica</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Marrocos.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Marrocos</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo F</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Khalifa</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">13h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Croacia.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Croácia </p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Canada.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Canadá</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo E</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Bayt</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Espanha.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Espanha</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Alemanha.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Alemanha</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">28/11 (Segunda-Feira)</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo G</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Janoub (Al Wakrah)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">07h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Camaroes.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Camarões</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Servia.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Sérvia</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo H</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Education City</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">10h00</span>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Coreia.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Coreia do Sul</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Gana.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Gana</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo G</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza"> 974 (Porto de Doha)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">13h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Brasil.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Brasil </p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Suica.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Suíça</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo H</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Lusail</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Portugal.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Portugal</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Uruguai.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Uruguai</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">29/11 (Terça-Feira)</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo A</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Bayt</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">12h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Holanda.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Holanda</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Catar.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Catar</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo A</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Khalifa</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">12h00</span>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Equador.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Equador</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Senegal.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Senegal</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo B</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Ahmad Bin Ali (Al Rayyan)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Ucrania.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Ucrânia </p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Inglaterra.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Inglaterra</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo B</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Thumama</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-ira.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Irã</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Eua.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">EUA</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">30/11 (Segunda Feira)</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo D</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Education City</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">12h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Tunisia.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Tunísia</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Franca.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">França</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo D</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Janoub (Al Wakrah)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">12h00</span>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Peru.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Peru</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Dinamarca.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Dinamarca</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo C</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza"> 974 (Porto de Doha)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Polonia.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Poônia </p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-argentina.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Argentina</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo C</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Lusail</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-AfricaDoSul.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Arábia Saudita</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-mexico.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">México</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">01/12 (Quinta Feira)</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo F</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza"> Ahmad Bin Ali (Al Rayyan)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">12h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Croacia.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Croácia</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Belgica.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Bélgica</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo F</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Thumama</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">12h00</span>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Canada.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Canadá</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Marrocos.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Marrocos</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo E</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Khalifa</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Japao.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Japão </p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Espanha.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Espanha</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo C</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Lusail</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-CostaRica.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Costa Rica</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-NovaZelandia.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Nova Zelândia</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">02/12 (Sexta-Feira)</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo H</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza"> Education City</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">12h00</span>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Coreia.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Coreia do Sul</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Portugal.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Portugal</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo H</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Janoub (Al Wakrah)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">12h00</span>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Gana.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Gana/p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Uruguai.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Uruguai</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo G</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Lusail</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Camaroes.png"
+													style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Camarões</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Brasil.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Brasil</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-2">
+												<span class="text-cinza text-bold">Grupo G</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">974 (Porto de Doha)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Servia.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Sérvia</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-14">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center truncate">
+												<img class="rounded-circle" alt=""
+													src="./img/icos-selecoes/ico-copa-Suica.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Suíça</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item borda-n">
+					<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body mb-8 p-0">
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">03/12 (sábado)</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Jogo 01</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Khalifaa Stadium</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">12h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle bg-gray-150" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato03.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">1° Lugar A</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato01.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">2° Lugar B</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Jogo 02</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Ahmad Bin Ali (Al Rayyan)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle bg-gray-150" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato03.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">1° Lugar C</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato01.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">2° Lugar D</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">04/12 (Domingo)</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Jogo 03</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Thumama Stadium</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">12h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle bg-gray-150" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato03.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">1° Lugar D</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato01.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">2° Lugar C</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Jogo 04</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Bayt Stadium</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle bg-gray-150" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato03.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">1° Lugar B</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato01.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">2° Lugar A</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">05/12 (Segunda-Feira)</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Jogo 05</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza"> Al Janoub Stadium</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">12h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle bg-gray-150" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato03.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">1° Lugar E</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato01.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">2° Lugar F</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Jogo 06</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza"> 974 (Porto de Doha)</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle bg-gray-150" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato03.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">1° Lugar G</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato01.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">2° Lugar H</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">06/12 (Terça-Feira)</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Jogo 07</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Education City Stadium</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">12h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle bg-gray-150" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato03.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">1° Lugar H</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato01.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">2° Lugar E</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Jogo 08</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza"> Lusail Stadium</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle bg-gray-150" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato03.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">1° Lugar H</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato01.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">2° Lugar G</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item borda-n">
+					<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body mb-8 p-0">
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">09/12 (sábado)</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Jogo 01</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Education City Stadium</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">12h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle bg-gray-150" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato03.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Vencedor Jogo 5</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato01.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Vencedor Jogo 6</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Jogo 02</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Lusail Stadium</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle bg-gray-150" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato03.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Vencedor do jogo 1</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato01.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Vencedor do jogo 2</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">10/12 (Domingo)</span>
+								</div>
+							</div>
+							<div class="wrapper-scroll">
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Jogo 03</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Thumama Stadium</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">12h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle bg-gray-150" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato03.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Vencedor do Jodo 7</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato01.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Vencedor do jogo 8</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Jogo 04</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Bayt Stadium</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle bg-gray-150" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato03.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Vencedor do jogo 4</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Vencedor do jogo 3</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato01.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">2° Lugar A</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item borda-n">
+					<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body mb-8 p-0">
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">13/12 (terça-feira)</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Semifinal 01</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza"> Lusail Stadium</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle bg-gray-150" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato03.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Vencedor do Jodo 2</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato01.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Vencedor do jogo 1</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row px-3 mt-2">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">14/12 (quarta-feira)</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Semifinal 02</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Al Bayt Stadium</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">16h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle bg-gray-150" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato03.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Vencedor do Jodo 4</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato01.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Vencedor do jogo 3</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item borda-n">
+					<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body mb-8 p-0">
+							<div class="row px-3">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">17/12 (sábado)</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="card justify-content-center borda-1 borda-n py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold">Terceiro Lugar</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Khalifa Stadium</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">12h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle bg-gray-150" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato03.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Time 01</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato01.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Time 02</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row px-3 mt-2">
+								<div
+									class="col-12 bg-fundo-nav px-1 py-1 borda-btn mb-3 text-center text-branco text-bold mt-2 mb-2 fs-14">
+									<i class="bi bi-calendar2-range-fill ms-2"></i>
+									<span class="ms-1">18/12 (domingo)</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="card justify-content-center borda-1 borda-final py-1 px-1 bg-gray-150">
+										<div class="row justify-content-center align-items-center mt-2">
+											<div class="col-12 fs-14 text-center mb-0">
+												<span class="text-cinza text-bold fs-16 text-success">Grande Final</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">Lusail Stadium</span>
+												<span class="text-roxo">•</span>
+												<span class="text-cinza">12h00</span>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle bg-gray-150" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato03.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Time 01</p>
+											</div>
+											<div class="col-6 text-center me-n3 ms-n3 align-items-center">
+												<div class="row">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-12">Seu Palpite</span>
+													</div>
+												</div>
+												<div class="row justify-content-center">
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+													<div class="col-1 mt-2 ms-n2 me-n2">
+														<span class="text-cinza text-bold">•</span>
+													</div>
+													<div class="col-5">
+														<div class="input-group mb-3">
+															<input type="text"
+																class="form-control borda-n fs-18 text-bold text-center"
+																placeholder="?" aria-label="Username"
+																aria-describedby="basic-addon1">
+														</div>
+													</div>
+												</div>
+												<div class="row mt-n3 mb-2">
+													<div class="col-12 text-center">
+														<span class="text-cinza fs-10">Resultado do Jogo</span>
+													</div>
+													<div class="col-12 mt-n2 text-center align-items-center">
+														<span class="text-roxo text-bold fs-10">X</span>
+														<span class="text-cinza text-bold fs-10">x</span>
+														<span class="text-roxo text-bold fs-10">X</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-3 text-center">
+												<img class="rounded-circle" alt=""
+													src="./img/Avatar/APOSTAPP-NFTs-pato01.png" style="width: 50px;">
+												<p class="text-cinza text-bold fs-10">Time 02</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- Modal -->
+	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+		aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
+			<div class="modal-content bg-fundo shadow-card">
+				<div class="row py-5 px-5">
+					<div class="col-12 text-center mb-6">
+						<img src="./img/Logos/logo-Palpitapp-2022-branco.png" alt="" style="max-width: 80%;">
+					</div>
+					<div class="col-12 text-center text-branco text-bold">
+						<span>
+							Tem certeza que deseja salvar os resultados dos Palpites?
+							Confira as regras e tabela de pontos para cada acerto! E veja sua classificação no
+							ranking deste campeonato!
+						</span>
+					</div>
+					<div class="col-12 text-center mt-3 mb-5">
+						<a href="./pontuacao.html">
+							<button type="button" class="btn btn-outline-light text-branco text-bold w-100">
+								<i class="bi bi-file-earmark-ppt"></i>
+								Tabela de Pontos
+							</button>
+						</a>
+					</div>
+					<div class="col-12 text-center text-branco mb-5">
+						<span>
+							Você pode alterar os resultados dos jogos até 30mim antes da partida começar!
+						</span>
+					</div>
+					<div class="col-12 py-4 px-4 text-center fixed-bottom">
+						<div class="row">
+							<div class="col-8">
+								<button type="button" class="btn btn-roxo w-100" data-bs-dismiss="modal">Salvar Resultados</button>
+							</div>
+							<div class="col-4">
+								<button type="button" class="btn btn-outline-light w-100" data-bs-dismiss="modal">Fechar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- JavaScript -->
+	<script src="./js/jquery-3.3.1.slim.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script>
+		//Retorna o URI da página que continha o link para a página atual.
+		var referencia = document.referrer;
+
+		//retorna a URL da página atual
+		var pagina = location.href;
+
+		//pegar a parte após o ? (ponto de interrogação
+		var partes = pagina.toString();
+		var divide = partes.split("?");
+		var parametros = divide[1];
+
+		//contrução da url da pagina anterior com parametros
+		var urlVoltar = referencia + "?" + parametros;
+
+		//verifica se a sessão está ativa
+		if (!sessionStorage.getItem('voltar')) {
+			//O objeto Session storage permite aos usuários armazenarem os dados para uma única sessão.
+			//A sessão da página dura enquanto o browser está aberto e se mantém no recarregamento da página.
+			sessionStorage.setItem("voltar", urlVoltar);
+		}
+
+		var url = sessionStorage.getItem("voltar");
+
+		document.write('<div class="return_back" onclick="location.href=\'' + url + '\'">voltar</div>');
+
+	</script>
+</body>
+
+</html>

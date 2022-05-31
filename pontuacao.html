@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<title>Palpitapp - Home</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Font Google-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,400;1,600;1,800&family=Roboto:wght@100;300;400;900&display=swap"
+		rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!-- Css Icones Bootstrap -->
+	<script src="https://kit.fontawesome.com/ed352fdede.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-fundo-app-1">
+	<section>
+		<nav class="navbar navbar-light w-100 fixed-top bg-fundo-nav">
+			<div class="container-fluid ">
+				<div class="return_back text-branco" onclick="window.history.go(-1);">
+					<i class="bi bi-arrow-left text-branco fs-20"></i>
+				</div>
+				<span class="fs-20 text-bol text-branco text-center">Tabela de Pontos
+				</span>
+				<button class="btn text-center" type="button" data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+					<i class="bi bi-bell-fill text-preto"></i>
+				</button>
+			</div>
+		</nav>
+	</section>
+	<main class="mb-8">
+		<!-- Menu sup -->
+		<div class="container-fluid" style="max-width: 400px;">
+			<div class="row mt-inicio">
+				<div class="col-12 text-center mt-n0 mb-3 ">
+					<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+						<div class="row">
+							<div class="col-12">
+								<div class="carousel-inner">
+									<div class="carousel-item py-5-1 active text-center" data-bs-interval="10000">
+										<a href="">
+											<img class="borda-btn" src="./img/Top-Banners/TOP-BANNERS-01.png" alt=""
+												style="width: 100%;">
+										</a>
+									</div>
+									<div class="carousel-item py-5-1 text-center" data-bs-interval="2000">
+										<a href="">
+											<img class="borda-btn" src="./img/Top-Banners/TOP-BANNERS-02.png" alt=""
+												style="width: 100%;">
+										</a>
+									</div>
+									<div class="carousel-item py-5-1 text-center">
+										<a href="">
+											<img class="borda-btn" src="./img/Top-Banners/TOP-BANNERS-03.png" alt=""
+												style="width: 100%;">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="carousel-indicators mx-5">
+									<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+										class="active" aria-current="true" aria-label="Slide 1"></button>
+									<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+										aria-label="Slide 2"></button>
+									<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+										aria-label="Slide 3"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row px-3 mb-3 mt-n3">
+				<div class="col-12 text-center text-bold mb-2 fs-18">
+					<span class="ms-1">Como funciona a pontuação do Ranking?</span>
+				</div>
+				<div class="col-12 mb-2 text-center text-cinza mb-2 fs-14">
+					<span class="ms-1">A pontuação é dividida por acertos,
+						veja a tabela abaixo e entenda como seus pontos são somados:
+					</span>
+				</div>
+			</div>
+			<div class="row justify-content-center mt-n0">
+				<div class="col-12 mb-4">
+					<div class="card borda-1 borda-n py-2 px-2 bg-gray-150 mb-2">
+						<div class="mb-0">
+							<div class="row align-items-center justify-content-center px-2 py-0">
+								<div class="col-9 text-start">
+									<span class="text-bold fs-14">
+										ACERTAR RESULTADO COMPLETO
+									</span>
+								</div>
+								<div class="col-3 text-end">
+									<span class="text-bold text-roxo fs-14">
+										5000 pts
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row align-items-center justify-content-center px-2 py-0">
+						<div class="col-12 text-start">
+							<span class="fs-12">
+								A pontuação máxima só vale para quem acertar o resultado em todas suas hipóteses!
+								Acertandando o vencedor e por consequência o perderdedor e o resultado exato da partida!
+								Caso seja caso de empate, só atingirá a pontuação máxima quem tiver exatidão no placar
+								final!
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 mb-4">
+					<div class="card borda-1 borda-n py-2 px-2 bg-gray-150">
+						<div class="mb-0">
+							<div class="row align-items-center justify-content-center px-2 py-0">
+								<div class="col-9 text-start">
+									<span class="text-bold fs-14">
+										ACERTAR RESULTADO PARCIAL
+									</span>
+								</div>
+								<div class="col-3 text-end">
+									<span class="text-bold text-roxo fs-14">
+										2500 pts
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row align-items-center justify-content-center px-2 py-0">
+						<div class="col-12 text-start">
+							<span class="fs-12">
+								Essa pontuação só será atingida por quem acertar somente o vencedor e por consequência o
+								perdedor, sem a exatidão ddo placar!
+								Em caso de empate só pontuará quem der como partida empatada porém não é necessário
+								acertar o placar!
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 mb-4">
+					<div class="card borda-1 borda-n py-2 px-2 bg-gray-150">
+						<div class="mb-0">
+							<div class="row align-items-center justify-content-center px-2 py-0">
+								<div class="row align-items-center justify-content-center px-2 py-0">
+									<div class="col-9 text-start">
+										<span class="text-bold fs-14">
+											SOMENTE PALPITAR
+										</span>
+									</div>
+									<div class="col-3 text-end">
+										<span class="text-bold text-roxo fs-14">
+											1000 pts
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row align-items-center justify-content-center px-2 py-0">
+						<div class="col-12 text-start">
+							<span class="fs-12">
+								Nós reconhecemos o esforço e a boa vontade de fazer parte das ligas! Então se você
+								palpitar e não se encaixar em nenhuma regra de pontuação você ganhará uma pontuação
+								de consolação da rodada!
+								Assim você sempre terá vantagem em relação à quem faz parte da liga mas não palpitou
+								em nenhum jogo!
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+	</main>
+
+	<!-- JavaScript -->
+	<script src="./js/jquery-3.3.1.slim.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script>
+		//Retorna o URI da página que continha o link para a página atual.
+		var referencia = document.referrer;
+
+		//retorna a URL da página atual
+		var pagina = location.href;
+
+		//pegar a parte após o ? (ponto de interrogação
+		var partes = pagina.toString();
+		var divide = partes.split("?");
+		var parametros = divide[1];
+
+		//contrução da url da pagina anterior com parametros
+		var urlVoltar = referencia + "?" + parametros;
+
+		//verifica se a sessão está ativa
+		if (!sessionStorage.getItem('voltar')) {
+			//O objeto Session storage permite aos usuários armazenarem os dados para uma única sessão.
+			//A sessão da página dura enquanto o browser está aberto e se mantém no recarregamento da página.
+			sessionStorage.setItem("voltar", urlVoltar);
+		}
+
+		var url = sessionStorage.getItem("voltar");
+
+		document.write('<div class="return_back" onclick="location.href=\'' + url + '\'">voltar</div>');
+
+	</script>
+</body>
+
+</html>

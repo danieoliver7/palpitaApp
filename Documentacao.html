@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Documentação - Palpitapp</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,400;1,600;1,800&family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Css Icones Bootstrap -->
+    <script src="https://kit.fontawesome.com/ed352fdede.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body class="">
+    <!--Conteudo-->
+    <main class=" bg-fundo mb-5">
+        <div class="container-fluid" style="max-width: 400px;">
+
+            <!--CARD PESSOA-->
+            <div class="col-12 mb-2">
+                <span class="ms-2 text-bold fs-16">Profissionais Perto de Você!</span>
+            </div>
+            <a href="">
+                <div class="card borda-1 borda-n shadow-card">
+                    <div class="row" style="align-items: center;">
+                        <div class="col-3 bg-roxo-claro borda-1-l me-f text-center">
+                            <a href="" class="avatar rounded-circle">
+                                <img class="py-2" alt="" src="./img/team-4.jpg" style="width: 70px;">
+                            </a>
+                        </div>
+                        <div class="col-7">
+                            <div class="row">
+                                <div class="col-12 fs-18 text-bold text-truncate">
+                                    <span class="">Maria das Flores das neves esteves Maria das Flores das neves
+										esteves</span>
+                                </div>
+                                <div class="col-12 mt-n1">
+                                    <span class="fs-14 text-bolder text-roxo">Cozinheira</span>
+                                    <span class="fs-10 ms-1 text-roxo">•</span>
+                                    <span class="text-cinza bold fs-12 text-bolder">
+										<i class="bi bi-star-fill text-roxo"></i> 9,8
+									</span>
+                                    <span class="fs-10 ms-1 text-roxo">•</span>
+                                    <span class="fs-12 text-cinza text-bolder">
+										<i class="bi bi-geo-alt text-roxo"></i>
+										120Km
+									</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <a href="" class=" text-roxo py-3">
+                                <i class="bi bi-heart-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!--imput pesquisa-->
+            <div class="col-12 mt-3">
+                <div class="input-group">
+                    <span class="input-group-text borda-input bg-branco borda-input-roxo" id="basic-addon1"><i
+							class="bi bi-search"></i></span>
+                    <input type="text" class="form-control borda-input-1 borda-input-roxo-1" placeholder="Pesquise o Produto Aqui!" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+
+            <!--Tarja Endereço-->
+            <div class="col-12 bg-roxo borda-geo px-1 py-1 mt-3">
+                <div class="row">
+                    <div class="col-1 ms-2">
+                        <i class="bi bi-geo-alt-fill branco"></i>
+                    </div>
+                    <div class="col-10 truncate ms-n3">
+                        <span class="text-branco fs-12">Avenida da Rua Tal, n°6000 - Complemento - Bairro -
+							Cidade</span>
+                    </div>
+                    <div class="col-1 ms-n3">
+                        <i class="bi bi-caret-right-fill branco"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 borda-0 px-1 py-1 mt-3">
+                <div class="row">
+                    <div class="col-1 ms-2">
+                        <i class="bi bi-geo-alt-fill text-roxo"></i>
+                    </div>
+                    <div class="col-10 truncate-roxo ms-n3">
+                        <span class="text-roxo fs-12">Avenida da Rua Tal, n°6000 - Complemento - Bairro -
+							Cidade</span>
+                    </div>
+                    <div class="col-1 ms-n3">
+                        <i class="bi bi-caret-right-fill text-roxo"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--imput para dados-->
+            <div class="col-12 mt-3">
+                <div class="input-group px-1 py-1">
+                    <span class="input-group-text borda-dados bg-branco borda-input-roxo py-input" id="basic-addon1">
+						<i class="bi bi-person-fill text-roxo fs-20"></i></span>
+                    <input type="text" class="form-control borda-dados-1 borda-input-roxo-1" placeholder="Pesquise o Produto Aqui!" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+
+            <!--Textarea-->
+            <div class="col-12 text-center mt-3">
+                <span class="text-bold fs-14 esp-1">
+					Faça uma breve descrição em até 250 caracteres!
+				</span>
+                <div class="form-floating px-1 py-1">
+                    <textarea class="form-control borda-textarea" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Conte-nos sobre você!</label>
+                </div>
+            </div>
+
+            <!--Valor-->
+            <div class="row centro mt-3">
+                <div class="col-12 text-center">
+                    <span class="text-bold fs-14 esp-1">
+						Dê uma médio do valor diário do seu serviço!
+					</span>
+                </div>
+                <div class="col-6">
+                    <div class="input-group px-1 py-1">
+                        <span class="input-group-text text-bolder text-roxo fs-20 borda-dados bg-branco borda-input-roxo py-input" id="basic-addon1">
+							R$</span>
+                        <input type="text" class="form-control borda-dados-1 fs-20 borda-input-roxo-1" placeholder="0,00" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+
+            <!--Botão Simples-->
+            <div class="col-12 text-center mt-3">
+                <button class="btn btn-roxo borda-btn px-5 py-2">
+					<span class="fs-14">Cadastrar</span>
+				</button>
+            </div>
+
+            <!--Botão Simples 100%-->
+            <div class="col-12 mt-3 btn-roxo borda-geo px-4 py-3">
+                <a href="">
+                    <div class="row">
+                        <div class="col-11">
+                            <span class="fs-14 text-branco">Boleira</span>
+                        </div>
+                        <div class="col-1">
+                            <i class="bi bi-caret-right text-branco"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--Botão Simples redondo-->
+            <div class="col-12 text-center mt-3">
+                <button class="btn btn-roxo borda-5 px-5 py-2">
+					<span class="fs-14">Cadastrar</span>
+				</button>
+            </div>
+
+            <!--Botão com Icon-->
+            <div class="col-12 text-center mt-3">
+                <button class="btn btn-roxo borda-btn py-2 px-5">
+					<i class="bi bi-patch-check"></i>
+					<span class="">
+						Cadastrar
+					</span>
+				</button>
+            </div>
+
+            <!--Botão com Icon - transparente-->
+            <div class="col-12 text-center mt-3">
+                <button class="btn">
+					<i class="bi bi-plus-circle text-roxo"></i>
+					<span class="ms-1 text-bold">
+						Adicionar Telefone
+					</span>
+				</button>
+            </div>
+
+            <!--Check box-->
+            <div class="col-12 centro mt-3">
+                <div class="form-check">
+                    <input class="form-check-input borda-4" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label text-roxo lembrar-me" for="flexCheckDefault">
+						lembrar-me
+					</label>
+                </div>
+            </div>
+
+            <!--Check box-->
+            <div class="col-12 centro mt-3 mt-4 mb-4">
+                <div class="row">
+                    <div class="col-auto ms-2">
+                        <div class="form-check">
+                            <input class="form-check-input borda-4 fs-18" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+								<span class="text-roxo fs-18 text-bold">Cozinheira(o)</span>
+							</label>
+                        </div>
+                    </div>
+                    <div class="col-auto ms-2">
+                        <div class="form-check">
+                            <input class="form-check-input borda-4 fs-18" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+								<span class="text-roxo fs-18 text-bold">Boleiro(a)</span>
+							</label>
+                        </div>
+                    </div>
+                    <div class="col-auto ms-2">
+                        <div class="form-check">
+                            <input class="form-check-input borda-4 fs-18" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+								<span class="text-roxo fs-18 text-bold">Eletricista</span>
+							</label>
+                        </div>
+                    </div>
+                    <div class="col-auto ms-2">
+                        <div class="form-check">
+                            <input class="form-check-input borda-4 fs-18" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+								<span class="text-roxo fs-18 text-bold">Motorista</span>
+							</label>
+                        </div>
+                    </div>
+                    <div class="col-auto ms-2">
+                        <div class="form-check">
+                            <input class="form-check-input borda-4 fs-18" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+								<span class="text-roxo fs-18 text-bold">Mecânico</span>
+							</label>
+                        </div>
+                    </div>
+                    <div class="col-auto ms-2">
+                        <div class="form-check">
+                            <input class="form-check-input borda-4 fs-18" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+								<span class="text-roxo fs-18 text-bold">Cozinheira(o)</span>
+							</label>
+                        </div>
+                    </div>
+                    <div class="col-auto ms-2">
+                        <div class="form-check">
+                            <input class="form-check-input borda-4 fs-18" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+								<span class="text-roxo fs-18 text-bold">Boleiro(a)</span>
+							</label>
+                        </div>
+                    </div>
+                    <div class="col-auto ms-2">
+                        <div class="form-check">
+                            <input class="form-check-input borda-4 fs-18" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+								<span class="text-roxo fs-18 text-bold">Eletricista</span>
+							</label>
+                        </div>
+                    </div>
+                    <div class="col-auto ms-2">
+                        <div class="form-check">
+                            <input class="form-check-input borda-4 fs-18" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+								<span class="text-roxo fs-18 text-bold">Motorista</span>
+							</label>
+                        </div>
+                    </div>
+                    <div class="col-auto ms-2">
+                        <div class="form-check">
+                            <input class="form-check-input borda-4 fs-18" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+								<span class="text-roxo fs-18 text-bold">Mecânico</span>
+							</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--botão href-->
+            <div class="col-12 text-center mt-3">
+                <a href="" class="fs-18 text-bold">
+                    <span class="text-roxo ms-2">Esqueceu a senha?</span><span class="text-preto">Clique aqui!</span>
+                </a>
+            </div>
+
+            <!--Tela Perfil-->
+            <div class="col-12 mt-3 text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="./img/team-4.jpg" class="rounded-circle shadow-card" alt="..." style="width: 150px;">
+                    </div>
+                    <div class="col-12 mt-2 mb-1">
+                        <span class="text-bold text-roxo fs-20">Maria de Lourdes da Silva</span>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <button class="btn bg-gray-200 borda-btn px-4 py-1">
+							<span class="text-cinza bold fs-16 text-bolder">
+								<i class="bi bi-star-fill text-roxo"></i> 9,8
+							</span>
+						</button>
+                        <button class="btn bg-gray-200 borda-btn px-4 py-1">
+							<span class="text-cinza bold fs-16 text-bolder">
+								<i class="bi bi-star-fill text-roxo"></i> 9,8
+							</span>
+						</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card tela perfil-->
+            <div class="card borda-1 borda-n shadow-card py-3 px-3 bg-gray-200 mt-3">
+                <div class="row">
+                    <div class="col-12 ms-2">
+                        <span class="text-bold fs-16"> Especialidade:</span>
+                    </div>
+                    <div class="col-12 ms-2">
+                        <button class="btn btn-roxo text-branco">
+							Cozinheira
+						</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card borda-1 borda-n shadow-card py-3 px-3 bg-gray-200 mt-3">
+                <div class="row">
+                    <div class="col-12 ms-2">
+                        <span class="text-bold fs-16"> Outras Tarefas:</span>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-roxo-claro mb-2"> Eletricista </button>
+                        <button class="btn btn-roxo-claro mb-2"> Boleira(o) </button>
+                        <button class="btn btn-roxo-claro mb-2"> Lava & Passa </button>
+                        <button class="btn btn-roxo-claro mb-2"> Diarista (Limpeza) </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card borda-1 borda-n shadow-card py-3 px-3 bg-gray-200 mt-3">
+                <div class="row" style="align-items: center;">
+                    <div class="col-auto me-3">
+                        <span class="text-bold fs-16"> Preço médio (Diária):</span>
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-preco">
+							<span class="fs-20 text-bolder">R$</span>
+							<span class="text-bold fs-18">60,00</span>
+						</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Botões seleção-->
+            <div class="col-12 text-center mt-3">
+                <div class="row">
+                    <div class="col-4">
+                        <button class="btn btn-roxo-select borda-btn w-100">
+							<span class="fs-14">Todas</span>
+						</button>
+                    </div>
+                    <div class="col-4">
+                        <button class="btn btn-roxo-select borda-btn w-100">
+							<span class="fs-14">Positivas</span>
+						</button>
+                    </div>
+                    <div class="col-4">
+                        <button class="btn btn-roxo-select borda-btn w-100">
+							<span class="fs-14">Negativas</span>
+						</button>
+                    </div>
+                </div>
+
+                <!--Card avaliações-->
+                <div class="col-12 mt-3">
+                    <div class="card borda-1 borda-n shadow-card py-3 px-3 bg-gray-200 mt-3">
+                        <div class="row text-start">
+                            <div class="col-12">
+                                <span class="text-bold fs-18"> Maria Cecília</span>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <span class="fs-12">
+									Melhor cozinheira que já ví! Ela chegou no horário combinado e ainda fez uma carne
+									de panela sensacional! Vale a pena
+								</span>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <div class="col-12 mt-3">
+                                    <button class="btn bg-gray-400 borda-btn px-4 py-1">
+										<span class="text-cinza bold fs-16 text-bolder">
+											<i class="bi bi-star-fill text-roxo"></i> 9,8
+										</span>
+									</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card tela mensagens-->
+            <div class="col-12 mt-3 mb-1">
+                <a href="">
+                    <div class="card bg-gray-200 borda-1 borda-n shadow-card">
+                        <div class="row">
+                            <div class="col-3 borda-1-l text-center">
+                                <a href="" class="avatar rounded-circle">
+                                    <img class="py-2 px-2" alt="" src="./img/team-4.jpg" style="width: 70px;">
+                                </a>
+                            </div>
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-12 fs-18 text-bold text-truncate mt-3">
+                                        <span class="">Maria das Flores </span>
+                                    </div>
+                                    <div class="col-12 mt-n1">
+                                        <span class="fs-14 text-bolder text-roxo">Cozinheira</span>
+                                        <span class="fs-10 ms-1 text-roxo">•</span>
+                                        <span class="fs-12 text-cinza text-bolder">
+											2 novas mensagens
+										</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 mt-3 mb-1">
+                <a href="">
+                    <div class="card bg-gray-200 borda-1 borda-n shadow-card">
+                        <div class="row">
+                            <div class="col-3 borda-1-l text-center">
+                                <a href="" class="avatar rounded-circle">
+                                    <img class="py-2 px-2" alt="" src="./img/team-4.jpg" style="width: 70px;">
+                                </a>
+                            </div>
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-12 fs-18 text-bold text-truncate mt-3">
+                                        <span class="">Maria das Flores </span>
+                                    </div>
+                                    <div class="col-12 mt-n1 text-truncate">
+                                        <i class="bi bi-geo-alt text-roxo"></i>
+                                        <span class="fs-14 text-bolder text-roxo">Av Governador Das Neves Flores - Jd
+											Piracicabana</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 mt-3 mb-2 ">
+                <div class="input-group px-1 py-1">
+                    <span class="input-group-text borda-dados bg-branco borda-input-roxo py-input" id="basic-addon1">
+						<i class="bi bi-person-fill text-roxo fs-20"></i></span>
+                    <select class="form-select borda-select px-2 py-2" aria-label="Default select example">
+						<option class="text-roxo text-bold" selected>Open this select menu</option>
+						<option class="text-roxo text-bold" value="1">One</option>
+						<option class="text-roxo text-bold" value="2">Two</option>
+						<option class="text-roxo text-bold" value="3">Three</option>
+					</select>
+                </div>
+            </div>
+
+            <!--Card Notificações-->
+            <div class="col-12 mt-3 mb-1">
+                <a href="">
+                    <div class="card px-3 py-3 bg-gray-200 borda-1 borda-n shadow-card">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-3 borda-1-l text-center">
+                                <a href="" class="rounded-circle btn-success px-3 py-3">
+                                    <i class="fa-regular fa-thumbs-up text-branco fs-20"></i>
+                                </a>
+                            </div>
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-12 fs-18 text-bold text-truncate">
+                                        <span class="">Maria das Flores </span>
+                                    </div>
+                                    <div class="col-12 mt-n1">
+                                        <span class="fs-14 text-bolder text-cinza">Cozinheira</span>
+                                        <span class="fs-10 ms-1 text-roxo">•</span>
+                                        <span class="fs-12 text-success text-bolder">
+											Solicitação Aceita
+										</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--Card Notificações-->
+            <div class="col-12 mt-3 mb-1">
+                <a href="">
+                    <div class="card px-3 py-3 bg-gray-200 borda-1 borda-n shadow-card">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-3 borda-1-l text-center">
+                                <a href="" class="rounded-circle btn-danger px-3 py-3">
+                                    <i class="fa-regular fa-thumbs-up text-branco fs-20"></i>
+                                </a>
+                            </div>
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-12 fs-18 text-bold text-truncate">
+                                        <span class="">Maria das Flores </span>
+                                    </div>
+                                    <div class="col-12 mt-n1">
+                                        <span class="fs-14 text-bolder text-cinza">Cozinheira</span>
+                                        <span class="fs-10 ms-1 text-roxo">•</span>
+                                        <span class="fs-12 text-danger text-bolder">
+											Recusou a Solicitação
+										</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!--Card Notificações-->
+            <div class="col-12 mt-3 mb-1">
+                <a href="">
+                    <div class="card px-3 py-3 bg-gray-200 borda-1 borda-n shadow-card">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-3 borda-1-l text-center">
+                                <a href="" class="rounded-circle btn-info px-3 py-3">
+                                    <i class="bi bi-clock text-preto text-bold fs-20"></i>
+                                </a>
+                            </div>
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-12 fs-18 text-bold text-truncate">
+                                        <span class="">Maria das Flores </span>
+                                    </div>
+                                    <div class="col-12 mt-n1">
+                                        <span class="fs-14 text-bolder text-cinza">Cozinheira</span>
+                                        <span class="fs-10 ms-1 text-roxo">•</span>
+                                        <span class="fs-12 text-info text-bolder">
+											Deseja Contratar
+										</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <!--Card notificações da telas-->
+            <div class="col-12 mt-3 mb-1">
+                <a href="">
+                    <div class="card bg-gray-200 borda-1 borda-n shadow-card py-2 px-2">
+                        <span class="position-absolute top-40 ms-2 translate-middle p-2 mt-2 bg-success border border-light rounded-circle">
+							<span class="visually-hidden">New alerts</span>
+                        </span>
+                        <div class="row align-items-center">
+                            <div class="col-3 borda-1-l text-center">
+                                <a href="#!" class="nav-link">
+                                    <div class="avatar-conversa position-relative">
+                                        <img class="img-fluid rounded-circle" src="./img/profile.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-12 fs-18 text-bold text-truncate mt-0">
+                                        <span class="">Maria das Flores </span>
+                                    </div>
+                                    <div class="col-12 mt-n1">
+                                        <span class="fs-14 text-bolder text-roxo">Cozinheira</span>
+                                        <span class="fs-10 ms-1 text-roxo">•</span>
+                                        <span class="fs-12 text-success text-bolder">
+											Solicitação aceita
+										</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <!--Wrapper-->
+        <div class="container-wrapper">
+            <div class="col-12 mt-3 px-4">
+                <span class="text-bold">
+					Serviços Mais Procurado
+				</span>
+            </div>
+            <div class="wrapper-scroll mt-2 px-2 py-2">
+                <div class="item">
+                    <a class="centro" href="">
+                        <img src="./img/team-4.jpg" class="rounded-circle avatar" alt="...">
+                    </a>
+                    <p class="text-roxo fs-12 text-bold text-center">
+                        Eletricista
+                    </p>
+                </div>
+                <div class="item">
+                    <a class="centro" href="">
+                        <img src="./img/team-4.jpg" class="rounded-circle avatar" alt="...">
+                    </a>
+                    <p class="text-roxo fs-12 text-bold text-center">
+                        Eletricista
+                    </p>
+                </div>
+                <div class="item">
+                    <a class="centro" href="">
+                        <img src="./img/team-4.jpg" class="rounded-circle avatar" alt="...">
+                    </a>
+                    <p class="text-roxo fs-12 text-bold text-center">
+                        Eletricista
+                    </p>
+                </div>
+                <div class="item">
+                    <a class="centro" href="">
+                        <img src="./img/team-4.jpg" class="rounded-circle avatar" alt="...">
+                    </a>
+                    <p class="text-roxo fs-12 text-bold text-center">
+                        Eletricista
+                    </p>
+                </div>
+                <div class="item">
+                    <a class="centro" href="">
+                        <img src="./img/team-4.jpg" class="rounded-circle avatar" alt="...">
+                    </a>
+                    <p class="text-roxo fs-12 text-bold text-center">
+                        Eletricista
+                    </p>
+                </div>
+                <div class="item">
+                    <a class="centro" href="">
+                        <img src="./img/team-4.jpg" class="rounded-circle avatar" alt="...">
+                    </a>
+                    <p class="text-roxo fs-12 text-bold text-center">
+                        Eletricista
+                    </p>
+                </div>
+                <div class="item">
+                    <a class="centro" href="">
+                        <img src="./img/team-4.jpg" class="rounded-circle avatar" alt="...">
+                    </a>
+                    <p class="text-roxo fs-12 text-bold text-center">
+                        Eletricista
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <!--Conteudo-->
+    <!-- Rodapé --
+	<div class="container-fluid text-center" id="rodape-menu">
+		<div class="row justify-content-center mb-0">
+			<nav id="menu">
+				<ul>
+					<li>
+						<a href="./Home.html">
+							<div class="">
+								<i class="bi bi-house-fill"></i>
+								<p class="laranaja">Home</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./Carrinho.html">
+							<div class="">
+								<i class="bi bi-cart-fill"></i>
+								<p class="">Carrinho</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="">
+								<i class="bi bi-file-earmark-break"></i>
+								<p class="">Pedidos</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="./Perfil.html">
+							<div class="px-22">
+								<i class="bi bi-person"></i>
+								<p class="">Perfil</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- Rodapé -->
+
+    <!-- JavaScript -->
+    <script src="./js/jquery-3.3.1.slim.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
